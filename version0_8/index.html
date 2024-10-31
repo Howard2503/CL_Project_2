@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川麻将游戏</title>
+    <style>
+        .tile {
+            display: inline-block;
+            width: 40px;
+            height: 60px;
+            border: 1px solid #000;
+            margin: 5px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>四川麻将游戏</h1>
+    <div id="player-hand"></div>
+    <button id="draw-tile">摸牌</button>
+    <button id="toggle-opponents">显示/隐藏对手手牌</button>
+    <button id="restart-game">重新开始</button>
+    <div id="opponent1-hand"></div>
+    <div id="opponent2-hand"></div>
+    <div id="opponent3-hand"></div>
+    <div id="remaining-tiles"></div>
+    <div id="player-discarded"></div>
+    <div id="opponent1-discarded"></div>
+    <div id="opponent2-discarded"></div>
+    <div id="opponent3-discarded"></div>
+    <script src="game.js"></script>
+</body>
+
+</html>
