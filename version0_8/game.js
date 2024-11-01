@@ -2,18 +2,19 @@
 
 // Create a basic deck of Mahjong tiles (simplified for demo purposes)
 let tiles = [
-  '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-  '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-  '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条',
-  '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-  '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-  '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条',
-  '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-  '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-  '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条',
-  '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-  '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-  '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条'
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  
 ];
 
 // Shuffle the tiles
@@ -48,18 +49,18 @@ function drawTile() {
 // Initialize the game by giving each player 13 tiles
 function initializeGame() {
   tiles = [
-    '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-    '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-    '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条',
-    '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-    '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-    '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条',
-    '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-    '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-    '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条',
-    '1万', '2万', '3万', '4万', '5万', '6万', '7万', '8万', '9万',
-    '1筒', '2筒', '3筒', '4筒', '5筒', '6筒', '7筒', '8筒', '9筒',
-    '1条', '2条', '3条', '4条', '5条', '6条', '7条', '8条', '9条'
+    '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
+  '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   ]; // Reset tiles for a new game
   shuffle(tiles);
   playerHand = [];
@@ -102,20 +103,20 @@ function renderOpponentsHands() {
   const opponent3HandDiv = document.getElementById('opponent3-hand');
 
   if (opponentsVisible) {
-    opponent1HandDiv.textContent = `Opponent 1: ${opponent1Hand.join(', ')}`;
-    opponent2HandDiv.textContent = `Opponent 2: ${opponent2Hand.join(', ')}`;
-    opponent3HandDiv.textContent = `Opponent 3: ${opponent3Hand.join(', ')}`;
+    opponent1HandDiv.textContent = `Opponent 1 电脑1: ${opponent1Hand.join(', ')}`;
+    opponent2HandDiv.textContent = `Opponent 2 电脑2: ${opponent2Hand.join(', ')}`;
+    opponent3HandDiv.textContent = `Opponent 3 电脑3: ${opponent3Hand.join(', ')}`;
   } else {
-    opponent1HandDiv.textContent = 'Opponent 1: Hidden';
-    opponent2HandDiv.textContent = 'Opponent 2: Hidden';
-    opponent3HandDiv.textContent = 'Opponent 3: Hidden';
+    opponent1HandDiv.textContent = 'Opponent 1 电脑1: Hidden';
+    opponent2HandDiv.textContent = 'Opponent 2 电脑2: Hidden';
+    opponent3HandDiv.textContent = 'Opponent 3 电脑3: Hidden';
   }
 }
 
 // Update the number of remaining tiles
 function updateRemainingTiles() {
   const remainingTilesDiv = document.getElementById('remaining-tiles');
-  remainingTilesDiv.textContent = `Remaining Tiles: ${tiles.length}`;
+  remainingTilesDiv.textContent = `Remaining Tiles 剩余手牌: ${tiles.length}`;
 
   // Check if the game should end
   if (tiles.length === 0) {
@@ -126,7 +127,7 @@ function updateRemainingTiles() {
 // End the game
 function endGame() {
   gameEnded = true; // Set game status to ended
-  alert("The game is over! No more tiles left.");
+  alert("游戏结束！The game is over! No more tiles left.");
   toggleGameControls(); // Disable game controls
 }
 
@@ -141,7 +142,7 @@ function toggleGameControls() {
 // Discard a tile from the player's hand
 function discardTile(tileIndex) {
   if (!playerHasDrawn) {
-    alert("You must draw a tile before discarding!");
+    alert("先摸牌！You must draw a tile before discarding!");
     return;
   }
   playerHand.splice(tileIndex, 1); // Remove the tile
@@ -191,7 +192,7 @@ function sortHands() {
 // Player draws a new tile and must discard afterward
 function drawTileForPlayer() {
   if (playerHasDrawn) {
-    alert("You must discard a tile before drawing a new one!");
+    alert(" 先摸牌！You must discard a tile before drawing a new one!");
     return;
   }
   const newTile = drawTile();
@@ -248,7 +249,7 @@ window.onload = () => {
 // Render the discarded tiles for the player
 function renderPlayerDiscarded() {
   const playerDiscardedDiv = document.getElementById('player-discarded');
-  playerDiscardedDiv.innerHTML = `玩家已打出: ${playerDiscarded.join(', ')}`;
+  playerDiscardedDiv.innerHTML = `玩家已打出 The player has discarded: ${playerDiscarded.join(', ')}`;
 }
 
 // Render the discarded tiles for the opponents
@@ -257,15 +258,15 @@ function renderOpponentsDiscarded() {
   const opponent2DiscardedDiv = document.getElementById('opponent2-discarded');
   const opponent3DiscardedDiv = document.getElementById('opponent3-discarded');
 
-  opponent1DiscardedDiv.innerHTML = `电脑一号已打出: ${opponent1Discarded.join(', ')}`;
-  opponent2DiscardedDiv.innerHTML = `电脑二号已打出: ${opponent2Discarded.join(', ')}`;
-  opponent3DiscardedDiv.innerHTML = `电脑三号已打出: ${opponent3Discarded.join(', ')}`;
+  opponent1DiscardedDiv.innerHTML = `电脑一号已打出 Opponent 1 has discarded: ${opponent1Discarded.join(', ')}`;
+  opponent2DiscardedDiv.innerHTML = `电脑二号已打出 Opponent 2 has discarded: ${opponent2Discarded.join(', ')}`;
+  opponent3DiscardedDiv.innerHTML = `电脑三号已打出 Opponent 3 has discarded: ${opponent3Discarded.join(', ')}`;
 }
 
 // Update the discard logic in discardTile function
 function discardTile(tileIndex) {
   if (!playerHasDrawn) {
-    alert("You must draw a tile before discarding!");
+    alert("先摸牌！You must draw a tile before discarding!");
     return;
   }
   const discardedTile = playerHand.splice(tileIndex, 1)[0]; // Remove the tile
@@ -284,7 +285,7 @@ function drawTileForOpponent(opponentHand, opponentDiscarded) {
   if (tiles.length > 0) {
     const newTile = drawTile();
     opponentHand.push(newTile); // Add new tile to opponent's hand
-    console.log(`Opponent drew: ${newTile}`);
+    console.log(`对手 Opponent drew: ${newTile}`);
     const discardedTile = opponentHand.pop(); // Randomly discard one tile
     opponentDiscarded.push(discardedTile); // Add to discarded tiles
   }
