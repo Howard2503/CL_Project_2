@@ -10,7 +10,7 @@
   
   /* General Page Styling */
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Serif SC', Arial, sans-serif !important;
     background-color: var(--pale-lavender);
     color: var(--slate-gray);
     display: flex;
@@ -23,6 +23,7 @@
   h1 {
     color: var(--deep-blue);
     margin-bottom: 20px;
+
   }
   
   /* Player Hand and Opponent Hands */
@@ -49,6 +50,7 @@
     text-align: center; 
     overflow: hidden; 
     padding: 2px; 
+    font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', Arial, sans-serif !important;
   }
   
  
@@ -58,6 +60,8 @@
     overflow: hidden;
     text-overflow: ellipsis; 
     width: 100%; 
+    font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', Arial, sans-serif;
+    line-height: 1.2; 
   }
   
   
@@ -65,6 +69,7 @@
     background-color: #f9f9f9;
     font-size: 15px; 
     transform: scale(1.1); 
+   
   }
   
   
