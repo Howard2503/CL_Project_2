@@ -3,16 +3,16 @@
 // Create a basic deck of Mahjong tiles (simplified for demo purposes)
 let tiles = [
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   
 ];
@@ -50,16 +50,16 @@ function drawTile() {
 function initializeGame() {
   tiles = [
     '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   '1万 1 character', '2万 2 character', '3万 3 character', '4万 4 character', '5万 5 character', '6万 6 character', '7万 7 character', '8万 8 character', '9万 9 character',
-  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8 dot', '9 dot',
+  '1筒 1 dot', '2筒 2 dot', '3筒 3 dot', '4筒 4 dot', '5筒 5 dot', '6筒 6 dot', '7筒 7 dot', '8筒 dot', '9筒 dot',
   '1条 1 bamboo', '2条 2 bamboo', '3 条 3 bamboo', '4 条 4 bamboo', '5条 5 bamboo', '6条 6 bamboo', '7条 7 bamboo', '8条 8 bamboo', '9条 9 bamboo',
   ]; // Reset tiles for a new game
   shuffle(tiles);
