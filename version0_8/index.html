@@ -10,6 +10,12 @@
 
 <body>
     <h1>四川麻将游戏 Sichuan Mahjong Game</h1>
+    
+    <audio id="background-music" src="background.mp3" preload="auto"loop ></audio>
+
+    <audio id="discard-sound" src="discard.mp3" preload="auto"></audio>
+
+
     <div id="player-hand"></div>
     <button id="draw-tile">摸牌 Draw your tile</button>
     <button id="toggle-opponents">显示/隐藏对手手牌 Show/Hide the opponents' tiles</button>
@@ -22,6 +28,7 @@
     <div id="opponent1-discarded"></div>
     <div id="opponent2-discarded"></div>
     <div id="opponent3-discarded"></div>
+    <button class="button" onclick="window.location.href='instruction.html'">Go to Instructions 查看指导</button>
     <script src="game.js"></script>
 </body>
 

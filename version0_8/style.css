@@ -14,6 +14,7 @@
     background-color: var(--pale-lavender);
     color: var(--slate-gray);
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     margin: 0;
@@ -22,7 +23,7 @@
   
   h1 {
     color: var(--deep-blue);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
   }
   
@@ -113,4 +114,21 @@
     margin: 10px 0;
     color: var(--nyu-purple);
   }
-  
+
+.buttonb {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--lavender-purple);
+    color: var(--nyu-purple);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+ }
+
+ .buttonb:hover {
+    background-color: var(--deep-blue);
+}

@@ -41,10 +41,27 @@ let opponent1Discarded = [];
 let opponent2Discarded = [];
 let opponent3Discarded = [];
 
+
+
+
 // Draw a tile from the deck
 function drawTile() {
   return tiles.pop();
 }
+
+window.onload = function() {
+  var playButton = document.getElementById("play-button");
+  var music = document.getElementById("background-music");
+
+  playButton.addEventListener("click", function() {
+      music.play().then(() => {
+          console.log("Music is playing");
+      }).catch(error => {
+          console.log("Error playing music: ", error);
+      });
+  });
+};
+
 
 // Initialize the game by giving each player 13 tiles
 function initializeGame() {
@@ -124,7 +141,7 @@ function updateRemainingTiles() {
   }
 }
 
-// End the game
+
 function endGame() {
   gameEnded = true; // Set game status to ended
   alert("游戏结束！The game is over! No more tiles left.");
@@ -141,10 +158,17 @@ function toggleGameControls() {
 
 // Discard a tile from the player's hand
 function discardTile(tileIndex) {
+  console.log('discardTile function called'); // Check if this function is triggered
   if (!playerHasDrawn) {
     alert("先摸牌！You must draw a tile before discarding!");
     return;
   }
+
+  const discardSound = document.getElementById('discard-sound');
+  discardSound.play();
+  discardSound.volume = 1;
+  console.log('Playing discard sound');
+
   playerHand.splice(tileIndex, 1); // Remove the tile
   playerHasDrawn = false; // Reset so player must draw again
   sortHands(); // Sort all hands after discard
@@ -291,6 +315,8 @@ function drawTileForOpponent(opponentHand, opponentDiscarded) {
   }
 }
 
+
+
 // Update the opponents' draw and discard logic
 function opponentsDrawAndDiscard() {
   drawTileForOpponent(opponent1Hand, opponent1Discarded);
@@ -300,3 +326,12 @@ function opponentsDrawAndDiscard() {
   renderOpponentsHands(); // Update opponents' hands display
   renderOpponentsDiscarded(); // Update opponents' discarded tiles display
 }
+document.addEventListener("DOMContentLoaded", function() {
+  var music = document.getElementById("background-music");
+  music.play().then(() => {
+      console.log("Music is playing");
+  }).catch(error => {
+      console.error("Error playing music:", error);
+  });
+});
+
