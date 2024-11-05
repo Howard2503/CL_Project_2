@@ -1,0 +1,149 @@
+
+:root {
+    --nyu-purple: #57068c;
+    --deep-blue: #06578c;
+    --lavender-purple: #9a70b1;
+    --light-blue: #5bc0eb;
+    --pale-lavender: #d9d3f0;
+    --slate-gray: #4a4a4a;
+  }
+  
+  /* General Page Styling */
+  body {
+    font-family: 'Noto Serif SC', Arial, sans-serif !important;
+    background-color: var(--pale-lavender);
+    color: var(--slate-gray);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--deep-blue);
+    margin-bottom: 15px;
+
+  }
+  
+  /* Player Hand and Opponent Hands */
+  #player-hand, .opponent-hand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+ 
+.tile {
+    width: 50px;  
+    height: 70px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; 
+    text-align: center; 
+    overflow: hidden; 
+    padding: 2px; 
+    font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', Arial, sans-serif !important;
+  }
+  
+ 
+  .tile span {
+    display: block;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    width: 100%; 
+    font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', Arial, sans-serif;
+    line-height: 1.2; 
+  }
+  
+  
+  .tile:hover {
+    background-color: #f9f9f9;
+    font-size: 15px; 
+    transform: scale(1.1); 
+   
+  }
+  
+  
+  .tile:active {
+    background-color: var(--lavender-purple);
+  }
+  
+
+  button {
+    margin: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--nyu-purple);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: var(--lavender-purple);
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* Discarded Tiles Section */
+  #player-discarded, #opponent1-discarded, #opponent2-discarded, #opponent3-discarded {
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--deep-blue);
+  }
+  
+  /* Remaining Tiles */
+  #remaining-tiles {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--nyu-purple);
+  }
+
+  #start-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    z-index: 1000;
+}
+
+.buttonb {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--lavender-purple);
+    color: var(--nyu-purple);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+ }
+
+ .buttonb:hover {
+    background-color: var(--deep-blue);
+}

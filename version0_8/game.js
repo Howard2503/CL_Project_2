@@ -53,13 +53,13 @@ window.onload = function() {
   var playButton = document.getElementById("play-button");
   var music = document.getElementById("background-music");
 
-  playButton.addEventListener("click", function() {
-      music.play().then(() => {
-          console.log("Music is playing");
-      }).catch(error => {
-          console.log("Error playing music: ", error);
-      });
-  });
+  // playButton.addEventListener("click", function() {
+  //     music.play().then(() => {
+  //         console.log("Music is playing");
+  //     }).catch(error => {
+  //         console.log("Error playing music: ", error);
+  //     });
+  // });
 };
 
 
