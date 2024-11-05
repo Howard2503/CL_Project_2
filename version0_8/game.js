@@ -160,7 +160,7 @@ function toggleGameControls() {
 function discardTile(tileIndex) {
   console.log('discardTile function called'); // Check if this function is triggered
   if (!playerHasDrawn) {
-    alert("先摸牌！You must draw a tile before discarding!");
+    alert("先出牌！You must draw a tile before discarding!");
     return;
   }
 
