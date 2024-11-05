@@ -216,7 +216,7 @@ function sortHands() {
 // Player draws a new tile and must discard afterward
 function drawTileForPlayer() {
   if (playerHasDrawn) {
-    alert(" 先摸牌！You must discard a tile before drawing a new one!");
+    alert(" 先出牌！You must discard a tile before drawing a new one!");
     return;
   }
   const newTile = drawTile();
