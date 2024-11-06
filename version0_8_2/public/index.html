@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川麻将游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>四川麻将游戏 Sichuan Mahjong Game</h1>
+
+
+    <audio id="discard-sound" src="discard.mp3" preload="auto"></audio>
+
+
+    <div id="player-hand"></div>
+    <button id="draw-tile">摸牌 Draw your tile</button>
+    <button id="toggle-opponents">显示/隐藏对手手牌 Show/Hide the opponents' tiles</button>
+    <button id="restart-game">重新开始 Restart the game</button>
+
+    <!-- <button id="start-music">Start Game and Play Music</button> -->
+
+    <div id="opponent1-hand"></div>
+    <div id="opponent2-hand"></div>
+    <div id="opponent3-hand"></div>
+    <div id="remaining-tiles"></div>
+    <div id="player-discarded"></div>
+    <div id="opponent1-discarded"></div>
+    <div id="opponent2-discarded"></div>
+    <div id="opponent3-discarded"></div>
+
+    <div id="chat-box"></div>
+    <input type="text" id="chat-input" placeholder="Type a message">
+    <button id="send-chat">Send</button>
+
+    <div id="start-overlay">
+        <button id="start-game">Click to Start the Game</button>
+    </div>
+    <audio id="background-music" src="background.mp3" preload="auto" loop></audio>
+
+    <button class="button" onclick="window.location.href='instruction.html'">Go to Instructions 查看指导</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
